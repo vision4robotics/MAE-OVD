@@ -320,9 +320,3 @@ This project is built upon [YOLO-World](https://github.com/AILab-CVC/YOLO-World)
 For questions, issues, or collaborations, please contact:
 
 - **Zhangchi Guo**: [2453655@tongji.edu.cn](https://github.com/vision4robotics/MAE-OVD/issues)
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Mmp3bmZ2dno2cDh5bjBiODJtNHZnZmtsNzg4OHpiNmlxYjN1NGw2cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xUPGcw99Tl8SCEDGKI/giphy.gif" alt="Rocket Launch" width="1000" />
-</p>
