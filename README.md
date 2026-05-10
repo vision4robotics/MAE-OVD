@@ -324,5 +324,5 @@ For questions, issues, or collaborations, please contact:
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Rocket Launch" width="120" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Mmp3bmZ2dno2cDh5bjBiODJtNHZnZmtsNzg4OHpiNmlxYjN1NGw2cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xUPGcw99Tl8SCEDGKI/giphy.gif" alt="Rocket Launch" width="1000" />
 </p>
