@@ -1,0 +1,41 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[Feature] "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Description
+
+        <!-- A clear and concise description of the feature you're proposing. -->
+
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: "Problem Solved"
+      description: "What problem does this feature solve?"
+      placeholder: |
+
+  - type: textarea
+    id:proposed-solution
+    attributes:
+      label: "Proposed Solution"
+      description: "Describe your proposed solution"
+      placeholder: |
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      description: "Any alternative solutions you've considered"
+      placeholder: |
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Any other context"
+      placeholder: |
+        <!-- Add any other context about the feature request here. -->

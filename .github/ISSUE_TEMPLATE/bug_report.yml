@@ -1,0 +1,59 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Description
+
+        <!-- A clear and concise description of what the bug is. -->
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "How to reproduce the bug (code snippet or commands)"
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What you expected to happen"
+      placeholder: |
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened"
+      placeholder: |
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Your system environment (Python version, OS, etc.)"
+      placeholder: |
+        - Python version:
+        - OS:
+        - PyTorch version:
+        - CUDA version:
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Any other context about the problem"
+      placeholder: |
+        <!-- Add any other context about the problem here. -->

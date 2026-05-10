@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite our paper."
+type: conference
+title: "MAE-OVD: MAE-Powered Open-Vocabulary Vision-Language Model for Anti-UAV Detection"
+abstract: >-
+  Open-vocabulary detection (OVD) is valuable for anti-unmanned aerial vehicle
+  (UAV) applications, as natural-language referring enables rapid, precise
+  instance-level localization. However, existing OVD methods face significant
+  challenges in UAV views due to motion blur, tiny objects, low signal-to-noise
+  ratio, and heavy background clutter. This work proposes MAE-OVD, a novel OVD
+  framework driven by Masked Autoencoding (MAE) for anti-UAV zero-shot
+  localization.
+authors:
+  - family-names: "Fu"
+    given-names: "Changhong"
+    affiliation: "Tongji University"
+    email: "changhongfu@tongji.edu.cn"
+    orcid: ""
+  - family-names: "Guo"
+    given-names: "Zhangchi"
+    affiliation: ""
+  - family-names: "Yao"
+    given-names: "Liangliang"
+    affiliation: ""
+  - family-names: "Zuo"
+    given-names: "Haobo"
+    affiliation: ""
+  - family-names: "Li"
+    given-names: "Mengyuan"
+    affiliation: ""
+  - family-names: "Feng"
+    given-names: "Yipeng"
+    affiliation: ""
+conference:
+  name: "International Conference on Advanced Robotics and Mechatronics"
+  abbreviation: "ICARM"
+  location: "TBD"
+  date: "2026"
+publisher:
+  name: "IEEE"
+keywords:
+  - "open-vocabulary detection"
+  - "anti-UAV"
+  - "masked autoencoder"
+  - "zero-shot learning"
+  - "vision-language model"
+license: "Apache-2.0"
+repository-code: "https://github.com/vision4robotics/MAE-OVD"
+url: "https://arxiv.org/"
+preferred-citation:
+  type: proceedings
+  title: "MAE-OVD: MAE-Powered Open-Vocabulary Vision-Language Model for Anti-UAV Detection"
+  conference-ref: "ICARM 2026"
+  year: 2026
+  publisher: "IEEE"

@@ -1,0 +1,109 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Model weights and checkpoints
+*.pth
+*.pt
+*.onnx
+*.pth.tar
+*.ckpt
+*.ckpt.h5
+checkpoints/
+work_dirs/
+*.pkl
+*.pkl.tar
+
+# Logs
+logs/
+*.log
+
+# Data
+datasets/
+data/
+weights/
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+tmp/
+
+# Third-party models (large files)
+third_party/openai/clip-vit-base-patch32/*.bin
+third_party/openai/clip-vit-base-patch32/*.pt
+
+# Markdown files generated during build
+docs/*.md
+docs/*.pdf
