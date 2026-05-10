@@ -58,30 +58,7 @@ MAE-OVD addresses these challenges with three key innovations:
 
 ## Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           MAE-OVD Architecture                               │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  Train Phase:                                                                │
-│  ┌──────────┐   ┌──────────────┐   ┌──────────┐   ┌─────────────────────┐  │
-│  │   MAE    │   │   Text      │   │  BiTL-   │   │        IFSD         │  │
-│  │  Branch  │──▶│  Encoder    │──▶│   PAN    │──▶│  (Semantic          │  │
-│  │(Auxiliary)│  │  (Frozen)   │   │          │   │   Purification)     │  │
-│  └──────────┘   └──────────────┘   └──────────┘   └─────────────────────┘  │
-│                                                          │                  │
-│                                                          ▼                  │
-│                                                ┌─────────────────────┐      │
-│                                                │      Box Head       │      │
-│                                                │    (Frozen/Head)    │      │
-│                                                └─────────────────────┘      │
-├─────────────────────────────────────────────────────────────────────────────┤
-│  Test Phase (Lightweight Inference):                                         │
-│  ┌──────────┐   ┌──────────────┐   ┌───────────────────────────────────┐  │
-│  │  Image   │   │  BiTL-IFSD  │   │      Box Head (Frozen)            │  │
-│  │ Encoder  │──▶│   Aligner   │──▶│    Zero-Shot Localization         │  │
-│  └──────────┘   └──────────────┘   └───────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+![MAE-OVD Pipeline](docs/pipeline.pdf)
 
 ### Key Components
 
@@ -97,16 +74,16 @@ MAE-OVD addresses these challenges with three key innovations:
 
 | Component | Version |
 |-----------|--------|
-| Ubuntu | 18.04 / 20.04 |
-| Python | 3.8+ |
-| PyTorch | 2.1.2 |
-| CUDA | 11.x |
+| Ubuntu | 20.04.6 LTS (Focal Fossa) |
+| Python | 3.8.10 |
+| PyTorch | 2.1.2+cu121 |
+| CUDA | 12.1 |
 
 ### Using Conda (Recommended)
 
 ```bash
 # Clone the conda environment from an existing YOLO-World environment
-conda create -n mae-ovd --clone yolo_world_vlt
+conda create -n mae-ovd --clone yolo_world
 conda activate mae-ovd
 
 # Install the package
@@ -150,7 +127,7 @@ python tools/train_pretrain.py --config configs/pretrain/default.py
 python tools/train_pretrain.py --config configs/pretrain/yolo_world_bitl_finetune.py
 
 # With custom hyperparameters
-python tools/train_pretrain.py \
+python tools/train_pretrain.py 
     --config configs/pretrain/default.py \
     --epochs 100 \
     --batch-size 16 \
