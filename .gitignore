@@ -104,6 +104,3 @@ tmp/
 third_party/openai/clip-vit-base-patch32/*.bin
 third_party/openai/clip-vit-base-patch32/*.pt
 
-# Markdown files generated during build
-docs/*.md
-docs/*.pdf
