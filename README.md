@@ -319,11 +319,47 @@ This project is built upon [YOLO-World](https://github.com/AILab-CVC/YOLO-World)
 
 For questions, issues, or collaborations, please contact:
 
-- **Changhong Fu**: [changhongfu@tongji.edu.cn](mailto:changhongfu@tongji.edu.cn)
-- **Zhangchi Guo**: [Open an Issue](https://github.com/vision4robotics/MAE-OVD/issues)
+- **Zhangchi Guo**: [2453655@tongji.edu.cn](https://github.com/vision4robotics/MAE-OVD/issues)
 
 ---
 
 <p align="center">
-  <img src="https://visitor-badge.la玄?ime=vision4robotics/MAE-OVD" alt="Visitor Badge" />
+  <!-- 动态加载动画 -->
+  <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      @keyframes rocket {
+        0%, 100% { transform: translateX(0) rotate(-10deg); }
+        25% { transform: translateX(30px) rotate(5deg); }
+        50% { transform: translateX(60px) rotate(-5deg); }
+        75% { transform: translateX(90px) rotate(5deg); }
+      }
+      @keyframes flame {
+        0%, 100% { opacity: 1; transform: scaleY(1); }
+        50% { opacity: 0.7; transform: scaleY(0.8); }
+      }
+      @keyframes star {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(0.5); }
+      }
+      .rocket { animation: rocket 3s ease-in-out infinite; transform-origin: center; }
+      .flame { animation: flame 0.2s ease-in-out infinite; transform-origin: top center; }
+      .star { animation: star 1.5s ease-in-out infinite; }
+      .star:nth-child(2) { animation-delay: 0.3s; }
+      .star:nth-child(3) { animation-delay: 0.6s; }
+    </style>
+    <!-- 星星 -->
+    <circle class="star" cx="10" cy="10" r="2" fill="#FFD700"/>
+    <circle class="star" cx="50" cy="5" r="1.5" fill="#FFD700"/>
+    <circle class="star" cx="110" cy="15" r="2" fill="#FFD700"/>
+    <!-- 火箭本体 -->
+    <g class="rocket">
+      <path d="M60 5 L70 25 L60 22 L50 25 Z" fill="#E74C3C"/>
+      <circle cx="60" cy="18" r="3" fill="#3498DB"/>
+    </g>
+    <!-- 火焰 -->
+    <g class="flame" transform="translate(55, 25)">
+      <path d="M5 0 Q7 8 5 15 Q3 8 5 0" fill="#F39C12"/>
+    </g>
+    <text x="60" y="38" font-size="10" fill="#888" text-anchor="middle" font-family="Arial">Blast Off!</text>
+  </svg>
 </p>
